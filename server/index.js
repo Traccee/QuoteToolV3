@@ -11,10 +11,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Health check route (for browser testing)
-app.get("/", (req, res) => {
-  res.send("QuoteToolV2 server is running ✅");
-});
 
 // Main quote endpoint
 app.post("/quote", (req, res) => {
